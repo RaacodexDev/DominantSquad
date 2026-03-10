@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominant Five — Playlist</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">⚔️ <span>Dominant Five</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="member.html">Member</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="playlist.html" class="active">Playlist</a></li>
+      <li><a href="author.html">Author</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Beranda</a></li>
+      <li><a href="member.html" onclick="closeMenu()">Member</a></li>
+      <li><a href="gallery.html" onclick="closeMenu()">Gallery</a></li>
+      <li><a href="playlist.html" onclick="closeMenu()">Playlist</a></li>
+      <li><a href="author.html" onclick="closeMenu()">Author</a></li>
+    </ul>
+  </div>
+
+  <section class="playlist">
+    <div class="section-header">
+      <p class="section-tag">— Vibes Tim —</p>
+      <h2 class="section-title">SQUAD <span>PLAYLIST</span></h2>
+    </div>
+
+    <div class="playlist-tabs">
+      <button class="pl-tab active" data-player="player1">Player 1</button>
+      <button class="pl-tab" data-player="player2">Player 2</button>
+      <button class="pl-tab" data-player="player3">Player 3</button>
+      <button class="pl-tab" data-player="player4">Player 4</button>
+      <button class="pl-tab" data-player="player5">Player 5</button>
+      <button class="pl-tab" data-player="player6">Player 6</button>
+    </div>
+
+    <div class="playlist-container">
+
+      <!-- PLAYER 1 -->
+      <div class="playlist-panel active" id="player1">
+        <div class="pl-profile">
+          <div class="pl-avatar"><img src="foto1.jpg" alt="Player1"></div>
+          <div>
+            <h3 class="pl-name">NamaPlayer1</h3>
+            <p class="pl-role">Hyper Carry</p>
+          </div>
+        </div>
+        <div class="pl-tracks">
+          <div class="pl-track">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 1</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 2</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 3</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLAYER 2 -->
+      <div class="playlist-panel" id="player2">
+        <div class="pl-profile">
+          <div class="pl-avatar"><img src="foto2.jpg" alt="Player2"></div>
+          <div>
+            <h3 class="pl-name">NamaPlayer2</h3>
+            <p class="pl-role">EXP Lane</p>
+          </div>
+        </div>
+        <div class="pl-tracks">
+          <div class="pl-track">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 1</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 2</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 3</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLAYER 3 -->
+      <div class="playlist-panel" id="player3">
+        <div class="pl-profile">
+          <div class="pl-avatar"><img src="foto3.jpg" alt="Player3"></div>
+          <div>
+            <h3 class="pl-name">NamaPlayer3</h3>
+            <p class="pl-role">Jungler</p>
+          </div>
+        </div>
+        <div class="pl-tracks">
+          <div class="pl-track">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 1</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 2</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 3</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLAYER 4 -->
+      <div class="playlist-panel" id="player4">
+        <div class="pl-profile">
+          <div class="pl-avatar"><img src="foto4.jpg" alt="Player4"></div>
+          <div>
+            <h3 class="pl-name">NamaPlayer4</h3>
+            <p class="pl-role">Roamer</p>
+          </div>
+        </div>
+        <div class="pl-tracks">
+          <div class="pl-track">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 1</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 2</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 3</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLAYER 5 -->
+      <div class="playlist-panel" id="player5">
+        <div class="pl-profile">
+          <div class="pl-avatar"><img src="foto5.jpg" alt="Player5"></div>
+          <div>
+            <h3 class="pl-name">NamaPlayer5</h3>
+            <p class="pl-role">Mid Lane</p>
+          </div>
+        </div>
+        <div class="pl-tracks">
+          <div class="pl-track">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 1</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 2</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 3</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLAYER 6 -->
+      <div class="playlist-panel" id="player6">
+        <div class="pl-profile">
+          <div class="pl-avatar"><img src="foto6.jpg" alt="Player6"></div>
+          <div>
+            <h3 class="pl-name">NamaPlayer6</h3>
+            <p class="pl-role">Gold Lane</p>
+          </div>
+        </div>
+        <div class="pl-tracks">
+          <div class="pl-track">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 1</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 2</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <p class="track-title">Nama Lagu 3</p>
+              <p class="track-artist">Nama Artist</p>
+            </div>
+            <a href="https://open.spotify.com/track/TRACK_ID" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo"><span>Dominant Five</span></p>
+      <p class="footer-copy">© 2025 — Dibuat oleh <span>Raacodèx</span> · All Rights Reserved</p>
+      <a href="#" class="footer-top">↑ Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

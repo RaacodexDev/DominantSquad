@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominant Five — Member</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo"><span>Dominant Five</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="member.html" class="active">Member</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="playlist.html">Playlist</a></li>
+      <li><a href="author.html">Author</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Beranda</a></li>
+      <li><a href="member.html" onclick="closeMenu()">Member</a></li>
+      <li><a href="gallery.html" onclick="closeMenu()">Gallery</a></li>
+      <li><a href="playlist.html" onclick="closeMenu()">Playlist</a></li>
+      <li><a href="author.html" onclick="closeMenu()">Author</a></li>
+    </ul>
+  </div>
+
+  <section class="member">
+    <div class="section-header">
+      <p class="section-tag">— The Team —</p>
+      <h2 class="section-title">SQUAD <span>MEMBER</span></h2>
+    </div>
+
+    <div class="member-slider">
+      <div class="member-track" id="memberTrack">
+
+        <!-- Card 1 -->
+        <div class="member-card">
+          <div class="card-top">
+            <div class="member-avatar">
+              <img src="foto1.jpg" alt="Player 1">
+            </div>
+            <div class="member-role-badge">Gold Lane</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Muhammad Fajar</h3>
+            <p class="member-ign">IGN: <span>ANAK KUAT MAMAH</span></p>
+            <div class="member-heroes">
+              <span>Ixia</span>
+              <span>Obsidia</span>
+              <span>Hanabi</span>
+            </div>
+            <div class="member-stats">
+              <div><p class="stat-num">68%</p><p class="stat-label">Winrate</p></div>
+              <div><p class="stat-num">4.2</p><p class="stat-label">KDA</p></div>
+              <div><p class="stat-num">Mythic</p><p class="stat-label">Rank</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="member-card">
+          <div class="card-top">
+            <div class="member-avatar">
+              <img src="foto2.jpg" alt="Player 2">
+            </div>
+            <div class="member-role-badge">EXP Lane</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Raffly Ahmad Saputra</h3>
+            <p class="member-ign">IGN: <span>Jo Kho Wee</span></p>
+            <div class="member-heroes">
+              <span>Mintsitar</span>
+              <span>Yu Zhong</span>
+              <span>Paquito</span>
+            </div>
+            <div class="member-stats">
+              <div><p class="stat-num">100%</p><p class="stat-label">Winrate</p></div>
+              <div><p class="stat-num">10.0</p><p class="stat-label">KDA</p></div>
+              <div><p class="stat-num">Mythic</p><p class="stat-label">Rank</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="member-card">
+          <div class="card-top">
+            <div class="member-avatar">
+              <img src="foto3.jpg" alt="Player 3">
+            </div>
+            <div class="member-role-badge">Jungler</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Wahyu Prasetyo</h3>
+            <p class="member-ign">IGN: <span>Karnaval</span></p>
+            <div class="member-heroes">
+              <span>Silvana</span>
+              <span>Karina</span>
+              <span>Nana</span>
+            </div>
+            <div class="member-stats">
+              <div><p class="stat-num">65%</p><p class="stat-label">Winrate</p></div>
+              <div><p class="stat-num">6.3</p><p class="stat-label">KDA</p></div>
+              <div><p class="stat-num">Legend</p><p class="stat-label">Rank</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="member-card">
+          <div class="card-top">
+            <div class="member-avatar">
+              <img src="foto4.jpg" alt="Player 4">
+            </div>
+            <div class="member-role-badge">Roamer</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Rehan Firmansyah</h3>
+            <p class="member-ign">IGN: <span>C E O</span></p>
+            <div class="member-heroes">
+              <span>Grock</span>
+              <span>Kaja</span>
+              <span>Franco</span>
+            </div>
+            <div class="member-stats">
+              <div><p class="stat-num">73%</p><p class="stat-label">Winrate</p></div>
+              <div><p class="stat-num">3.8</p><p class="stat-label">KDA</p></div>
+              <div><p class="stat-num">Mythic</p><p class="stat-label">Rank</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="member-card">
+          <div class="card-top">
+            <div class="member-avatar">
+              <img src="foto5.jpg" alt="Player 5">
+            </div>
+            <div class="member-role-badge">Mid Lane</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Farel Lewan Ibrahim</h3>
+            <p class="member-ign">IGN: <span>PlayerFive#ML</span></p>
+            <div class="member-heroes">
+              <span>Kadita</span>
+              <span>Kagura</span>
+              <span>Nana</span>
+            </div>
+            <div class="member-stats">
+              <div><p class="stat-num">70%</p><p class="stat-label">Winrate</p></div>
+              <div><p class="stat-num">7.0</p><p class="stat-label">KDA</p></div>
+              <div><p class="stat-num">Mythic</p><p class="stat-label">Rank</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="member-card">
+          <div class="card-top">
+            <div class="member-avatar">
+              <img src="foto6.jpg" alt="Player 6">
+            </div>
+            <div class="member-role-badge">Mid Lane</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Fikri Husein</h3>
+            <p class="member-ign">IGN: <span>PlayerSix#ML</span></p>
+            <div class="member-heroes">
+              <span>Cecilion</span>
+              <span>Kadita</span>
+              <span>Nana</span>
+            </div>
+            <div class="member-stats">
+              <div><p class="stat-num">69%</p><p class="stat-label">Winrate</p></div>
+              <div><p class="stat-num">4.8</p><p class="stat-label">KDA</p></div>
+              <div><p class="stat-num">Mythic</p><p class="stat-label">Rank</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navigasi Slider -->
+      <div class="slider-nav">
+        <button class="slider-btn" id="prevBtn">&#8592;</button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextBtn">&#8594;</button>
+      </div>
+      <p class="slider-counter" id="sliderCounter">1 / 6</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">⚔️ <span>Dominant Five</span></p>
+      <p class="footer-copy">© 2025 — Dibuat oleh <span>Raacodèx</span> · All Rights Reserved</p>
+      <a href="#" class="footer-top">↑ Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const cards = document.querySelectorAll('.member-track .member-card');
+    const dotsContainer = document.getElementById('sliderDots');
+    const counter = document.getElementById('sliderCounter');
+    let current = 0;
+
+    cards.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goTo(i));
+      dotsContainer.appendChild(dot);
+    });
+
+    cards[0].classList.add('active');
+
+    function goTo(index) {
+      cards[current].classList.remove('active');
+      dotsContainer.children[current].classList.remove('active');
+      current = (index + cards.length) % cards.length;
+      cards[current].classList.add('active');
+      dotsContainer.children[current].classList.add('active');
+      counter.textContent = `${current + 1} / ${cards.length}`;
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('nextBtn').addEventListener('click', () => goTo(current + 1));
+
+    let startX = 0;
+    const track = document.getElementById('memberTrack');
+    track.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+    track.addEventListener('touchend', e => {
+      const diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) diff > 0 ? goTo(current + 1) : goTo(current - 1);
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight') goTo(current + 1);
+      if (e.key === 'ArrowLeft') goTo(current - 1);
+    });
+  </script>
+</body>
+</html>

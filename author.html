@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominant Five — Author</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo"><span>Dominant Five</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="member.html">Member</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="playlist.html">Playlist</a></li>
+      <li><a href="author.html" class="active">Author</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Beranda</a></li>
+      <li><a href="member.html" onclick="closeMenu()">Member</a></li>
+      <li><a href="gallery.html" onclick="closeMenu()">Gallery</a></li>
+      <li><a href="playlist.html" onclick="closeMenu()">Playlist</a></li>
+      <li><a href="author.html" onclick="closeMenu()">Author</a></li>
+    </ul>
+  </div>
+
+  <section class="author">
+    <div class="section-header">
+      <p class="section-tag">— Pembuat Web —</p>
+      <h2 class="section-title">THE <span>AUTHOR</span></h2>
+    </div>
+
+    <div class="author-card">
+
+      <!-- Kiri -->
+      <div class="author-left">
+        <div class="author-avatar">
+          <img src="img/profile.png" alt="Author">
+        </div>
+        <div class="author-badge">Web Developer</div>
+      </div>
+
+      <!-- Tengah -->
+      <div class="author-mid">
+        <p class="author-tag">Made with by</p>
+        <h2 class="author-name">Raacodèx</h2>
+        <p class="author-bio">
+          Siswa yang suka ngoding dan gaming.
+          Bikin web ini buat squad ML tercinta.
+          Semoga bermanfaat dan tim makin solid! 🔥
+        </p>
+        <div class="author-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <div class="author-socials">
+          <a href="https://instagram.com/username" target="_blank" class="social-btn">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://github.com/Raacodex" target="_blank" class="social-btn">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://wa.me/628517426562" target="_blank" class="social-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Kanan -->
+      <div class="author-right">
+        <div class="author-quote">
+          <p class="quote-mark">"</p>
+          <p class="quote-text">Code is like a game — the more you grind, the better you get.</p>
+          <p class="quote-from">— Raacodèx</p>
+        </div>
+        <div class="author-stats">
+          <div class="a-stat">
+            <p class="a-stat-num">1</p>
+            <p class="a-stat-label">Web Project</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-num">6</p>
+            <p class="a-stat-label">Team Members</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-num">∞</p>
+            <p class="a-stat-label">Dedication</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo"> <span>Dominant Five</span></p>
+      <p class="footer-copy">© 2025 — Dibuat oleh <span>Raacodèx</span> · All Rights Reserved</p>
+      <a href="#" class="footer-top">↑ Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

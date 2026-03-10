@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominant Five — Beranda</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo"><span>Dominant Five</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Beranda</a></li>
+      <li><a href="member.html">Member</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="playlist.html">Playlist</a></li>
+      <li><a href="author.html">Author</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Beranda</a></li>
+      <li><a href="member.html" onclick="closeMenu()">Member</a></li>
+      <li><a href="gallery.html" onclick="closeMenu()">Gallery</a></li>
+      <li><a href="playlist.html" onclick="closeMenu()">Playlist</a></li>
+      <li><a href="author.html" onclick="closeMenu()">Author</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-text">DOMINANT</div>
+    <div class="hero-content reveal-left">
+      <p class="hero-subtitle">Mobile Legends • Competitive Team</p>
+      
+      <div class="hero-logo reveal-scale">
+    <img src="img/logo.png" alt="Dominant Five Logo">
+  </div>
+      
+      <h1 class="hero-title"><span>Dominant Five</span></h1>
+      <p class="hero-desc">Dominate the battlefield. One team, one goal.</p>
+      <div class="hero-buttons">
+        <a href="member.html" class="btn-primary">Meet The Team</a>
+        <a href="gallery.html" class="btn-outline">Our Gallery</a>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <div class="badge-ring">
+        <span>S1 2025</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar" id="stats">
+
+  <div class="stats-header">
+    <p class="stats-title">Statistik Tim</p>
+    <p class="stats-sub">Data performa Dominant Five musim ini</p>
+  </div>
+    
+    <div class="stats-wrap">
+
+      <div class="stat-item">
+        <p class="stat-big" data-target="6">0</p>
+        <p class="stat-desc">Members</p>
+      </div>
+
+      <div class="stat-divider"></div>
+
+      <div class="stat-item">
+        <p class="stat-big" data-target="68" data-suffix="%">0%</p>
+        <p class="stat-desc">Winrate</p>
+      </div>
+
+      <div class="stat-divider"></div>
+
+      <div class="stat-item">
+        <p class="stat-big" data-target="120">0</p>
+        <p class="stat-desc">Total Match</p>
+      </div>
+
+      <div class="stat-divider"></div>
+
+      <div class="stat-item">
+        <p class="stat-big" data-target="4" data-suffix=".5 KDA">0</p>
+        <p class="stat-desc">Avg KDA</p>
+      </div>
+
+      <div class="stat-divider"></div>
+
+      <div class="stat-item">
+        <p class="stat-big">Mythic</p>
+        <p class="stat-desc">Highest Rank</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- QUICK NAV CARDS -->
+  <section class="quicknav">
+    <div class="quicknav-grid">
+
+      <a href="member.html" class="qcard">
+        <div class="qcard-icon">👥</div>
+        <h3>Member</h3>
+        <p>Lihat profil & role tiap player</p>
+        <span class="qcard-arrow">→</span>
+      </a>
+
+      <a href="gallery.html" class="qcard">
+        <div class="qcard-icon">🖼️</div>
+        <h3>Gallery</h3>
+        <p>Foto & video highlight tim</p>
+        <span class="qcard-arrow">→</span>
+      </a>
+
+      <a href="playlist.html" class="qcard">
+        <div class="qcard-icon">🎵</div>
+        <h3>Playlist</h3>
+        <p>Lagu favorit tiap member</p>
+        <span class="qcard-arrow">→</span>
+      </a>
+
+      <a href="author.html" class="qcard">
+        <div class="qcard-icon">💻</div>
+        <h3>Author</h3>
+        <p>Pembuat web ini</p>
+        <span class="qcard-arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">⚔️ <span>Dominant Five</span></p>
+      <p class="footer-copy">© 2025 — Dibuat oleh <span>Raacodèx</span> · All Rights Reserved</p>
+      <a href="#" class="footer-top">↑ Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
