@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominant Five — Playlist</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">⚔️ <span>Dominant Five</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="member.html">Member</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="playlist.html" class="active">Playlist</a></li>
+      <li><a href="author.html">Author</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Beranda</a></li>
+      <li><a href="member.html" onclick="closeMenu()">Member</a></li>
+      <li><a href="gallery.html" onclick="closeMenu()">Gallery</a></li>
+      <li><a href="playlist.html" onclick="closeMenu()">Playlist</a></li>
+      <li><a href="author.html" onclick="closeMenu()">Author</a></li>
+    </ul>
+  </div>
+
+  <section class="playlist">
+    <div class="section-header">
+      <p class="section-tag">— Vibes Tim —</p>
+      <h2 class="section-title">SQUAD <span>PLAYLIST</span></h2>
+    </div>
+
+    <div class="playlist-tabs">
+      <button class="pl-tab active" data-player="player1">Player 1</button>
+      <button class="pl-tab" data-player="player2">Player 2</button>
+      <button class="pl-tab" data-player="player3">Player 3</button>
+      <button class="pl-tab" data-player="player4">Player 4</button>
+      <button class="pl-tab" data-player="player5">Player 5</button>
+      <button class="pl-tab" data-player="player6">Player 6</button>
+    </div>
+
+    <div class="playlist-container">
+
+      <!-- PLAYER 1 -->
+      <div class="playlist-panel active" id="player1">
+        <div class="pl-profile">
+          <div class="pl-avatar"><img src="img/pp1.jpg" alt="Player1"></div>
+          <div>
+            <h3 class="pl-name">Muhammad Fajar</h3>
+            <p class="pl-role">Gold Lane</p>
+          </div>
+        </div>
+        <div class="pl-tracks">
+          <div class="pl-track">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <p class="track-title">Favorite Girl</p>
+              <p class="track-artist">Lagu • Justin Biebier</p>
+            </div>
+            <a href="https://open.spotify.com/track/4nTjkWK590oBDcnIxTr1mI?si=Wq7HO_AtTT6sM6ixGUQr9Q" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <p class="track-title">Imagination</p>
+              <p class="track-artist">Lagu • Shawn Mendes</p>
+            </div>
+            <a href="https://open.spotify.com/track/0C3xZJueyBvvMSsl0cETA6?si=YaYfObY0TqOaHdR25SSqIw" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <p class="track-title">Yank</p>
+              <p class="track-artist">Lagu • Wali</p>
+            </div>
+            <a href="https://open.spotify.com/track/0C3xZJueyBvvMSsl0cETA6?si=YaYfObY0TqOaHdR25SSqIw" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLAYER 2 -->
+      <div class="playlist-panel" id="player2">
+        <div class="pl-profile">
+          <div class="pl-avatar"><img src="img/pp2.jpg" alt="Player2"></div>
+          <div>
+            <h3 class="pl-name">Raffly Ahmad Saputra</h3>
+            <p class="pl-role">EXP Lane</p>
+          </div>
+        </div>
+        <div class="pl-tracks">
+          <div class="pl-track">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <p class="track-title">Play Date (Lofi)</p>
+              <p class="track-artist">Lagu • Swattrex</p>
+            </div>
+            <a href="https://open.spotify.com/track/6Gt7QCuaUWH7aVBngKfC8k?si=LHX56Sy7R6uRAnipA8Re4w" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <p class="track-title">Stereo Love</p>
+              <p class="track-artist">Lagu • Shake Music</p>
+            </div>
+            <a href="https://open.spotify.com/track/5pUbOD1dDdsEC0v7PeX9RW?si=GAcvP3mHQxKx9xBkcPGo3A" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <p class="track-title">Gotoubun No Kimochi</p>
+              <p class="track-artist">Lagu • 中野家の五つ子</p>
+            </div>
+            <a href="https://open.spotify.com/track/3XaDR0Rz5FBCB6TdMDEiKP?si=0LqZYs8yTwuR6w57BECxVg" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLAYER 3 -->
+      <div class="playlist-panel" id="player3">
+        <div class="pl-profile">
+          <div class="pl-avatar"><img src="img/pp3.png" alt="Player3"></div>
+          <div>
+            <h3 class="pl-name">Wahyu Prasetyo</h3>
+            <p class="pl-role">Jungler</p>
+          </div>
+        </div>
+        <div class="pl-tracks">
+          <div class="pl-track">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <p class="track-title">Tum Hi Ho</p>
+              <p class="track-artist">Lagu • Arijit Singh</p>
+            </div>
+            <a href="https://open.spotify.com/track/56zZ48jdyY2oDXHVnwg5Di?si=3w4PJYnDQcK08KXQ6pKNxA" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <p class="track-title">Janam Janam</p>
+              <p class="track-artist">Lagu • Arijit Singh</p>
+            </div>
+            <a href="https://open.spotify.com/track/4km0RUkMMFdx8iDuq36o2w?si=M40S1ou2S5CRk71qNg5wHw" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <p class="track-title">Aashiqui 2 Mashup</p>
+              <p class="track-artist">Lagu • Arijit Singh</p>
+            </div>
+            <a href="https://open.spotify.com/track/5j7pU3PrmdKix8kkvPpBzE?si=kXrozjSNSZuXvzPo3S4ulg" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLAYER 4 -->
+      <div class="playlist-panel" id="player4">
+        <div class="pl-profile">
+          <div class="pl-avatar"><img src="img/pp4.jpg" alt="Player4"></div>
+          <div>
+            <h3 class="pl-name">Rehan Firmansyah</h3>
+            <p class="pl-role">Roamer</p>
+          </div>
+        </div>
+        <div class="pl-tracks">
+          <div class="pl-track">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <p class="track-title">The Winner Takes It All</p>
+              <p class="track-artist">Lagu • ABBA</p>
+            </div>
+            <a href="https://open.spotify.com/track/3oEkrIfXfSh9zGnE7eBzSV?si=3PVr2_cNQaSQ7eE-N9B37A" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <p class="track-title">Memories</p>
+              <p class="track-artist">Lagu • Conan Grey</p>
+            </div>
+            <a href="https://open.spotify.com/track/5UXJzLFdBn6u9FJTCnoHrH?si=JtJUNIFFSymC2WkYMVSdBA" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <p class="track-title">Wild Flower</p>
+              <p class="track-artist">Lagu • Billie Eilist</p>
+            </div>
+            <a href="https://open.spotify.com/track/3QaPy1KgI7nu9FJEQUgn6h?si=YLQckRHkTOOomTSmPDFt2Q" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLAYER 5 -->
+      <div class="playlist-panel" id="player5">
+        <div class="pl-profile">
+          <div class="pl-avatar"><img src="img/pp5.jpg" alt="Player5"></div>
+          <div>
+            <h3 class="pl-name">Farel Lewan Ibrahim</h3>
+            <p class="pl-role">Mid Lane</p>
+          </div>
+        </div>
+        <div class="pl-tracks">
+          <div class="pl-track">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <p class="track-title">Darksite</p>
+              <p class="track-artist">Lagu • Alan Walker</p>
+            </div>
+            <a href="https://open.spotify.com/track/6SRWhUJcD2YKahCwHavz3X?si=P-v0EcXtRpCU_aPd7Nl5IA" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <p class="track-title">Love Story</p>
+              <p class="track-artist">Lagu • Taylor Swift</p>
+            </div>
+            <a href="https://open.spotify.com/track/3CeCwYWvdfXbZLXFhBrbnf?si=4YUlGtPaT56XSvQqNMw3tQ" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <p class="track-title">Shape Of You</p>
+              <p class="track-artist">Lagu • Ed Sheeran</p>
+            </div>
+            <a href="https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3?si=zcT3EqPoT9aBGqbtM-0V3A" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLAYER 6 -->
+      <div class="playlist-panel" id="player6">
+        <div class="pl-profile">
+          <div class="pl-avatar"><img src="img/pp6.jpg" alt="Player6"></div>
+          <div>
+            <h3 class="pl-name">Fikri Al Husein</h3>
+            <p class="pl-role">Mid Lane</p>
+          </div>
+        </div>
+        <div class="pl-tracks">
+          <div class="pl-track">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <p class="track-title">Lossing Us.</p>
+              <p class="track-artist">Lagu • Raissa Anggiani</p>
+            </div>
+            <a href="https://open.spotify.com/track/6embPWj9qvusLg9JpbAmCQ?si=c-SSyCTMSIGpU5KXA5JnBg" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <p class="track-title">All Too Well</p>
+              <p class="track-artist">Lagu • Taylor Swift</p>
+            </div>
+            <a href="https://open.spotify.com/track/5enxwA8aAbwZbf5qCHORXi?si=BIphuUikR--CeNGqzYeAxw" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+          <div class="pl-track">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <p class="track-title">Autumn</p>
+              <p class="track-artist">Lagu • Niki</p>
+            </div>
+            <a href="https://open.spotify.com/track/0W5o1Kxw1VlohSajPqeBMF?si=vphpvfyCRXq3j4yLLhXCDg" target="_blank" class="track-link">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo"><span>Dominant Five</span></p>
+      <p class="footer-copy">© 2026 — Dibuat oleh <span>Raacodèx</span> · All Rights Reserved</p>
+      <a href="#" class="footer-top">↑ Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
