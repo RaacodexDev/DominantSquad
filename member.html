@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominant Five — Member</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo"><span>Dominant Five</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="member.html" class="active">Member</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="playlist.html">Playlist</a></li>
+      <li><a href="author.html">Author</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Beranda</a></li>
+      <li><a href="member.html" onclick="closeMenu()">Member</a></li>
+      <li><a href="gallery.html" onclick="closeMenu()">Gallery</a></li>
+      <li><a href="playlist.html" onclick="closeMenu()">Playlist</a></li>
+      <li><a href="author.html" onclick="closeMenu()">Author</a></li>
+    </ul>
+  </div>
+
+  <section class="member">
+    <div class="section-header">
+      <p class="section-tag">— The Team —</p>
+      <h2 class="section-title">SQUAD <span>MEMBER</span></h2>
+    </div>
+
+    <div class="member-slider">
+      <div class="member-track" id="memberTrack">
+
+        <!-- Card 1 -->
+        <div class="member-card">
+          <div class="card-top">
+            <div class="member-avatar"><img src="img/pp1.jpg" alt="Muhammad Fajar"></div>
+            <div class="member-role-badge">Gold Lane</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Muhammad Fajar</h3>
+            <p class="member-ign">IGN: <span>ANAK KUAT MAMAH</span></p>
+            <button class="view-profile-btn" onclick="openModal(0)">View Profile <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="member-card">
+          <div class="card-top">
+            <div class="member-avatar"><img src="img/pp2.jpg" alt="Raffly"></div>
+            <div class="member-role-badge">EXP Lane</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Raffly Ahmad S</h3>
+            <p class="member-ign">IGN: <span>Jo Kho Wee</span></p>
+            <button class="view-profile-btn" onclick="openModal(1)">View Profile <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="member-card">
+          <div class="card-top">
+            <div class="member-avatar"><img src="img/pp3.png" alt="Wahyu"></div>
+            <div class="member-role-badge">Jungler</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Wahyu Prasetyo</h3>
+            <p class="member-ign">IGN: <span>Karnaval</span></p>
+            <button class="view-profile-btn" onclick="openModal(2)">View Profile <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="member-card">
+          <div class="card-top">
+            <div class="member-avatar"><img src="img/pp4.jpg" alt="Rehan"></div>
+            <div class="member-role-badge">Roamer</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Rehan Firmansyah</h3>
+            <p class="member-ign">IGN: <span>C E O</span></p>
+            <button class="view-profile-btn" onclick="openModal(3)">View Profile <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="member-card">
+          <div class="card-top">
+            <div class="member-avatar"><img src="img/pp5.jpg" alt="Farel"></div>
+            <div class="member-role-badge">Mid Lane</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Farel Lewan Ibrahim</h3>
+            <p class="member-ign">IGN: <span>shnzamliaa•</span></p>
+            <button class="view-profile-btn" onclick="openModal(4)">View Profile <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="member-card">
+          <div class="card-top">
+            <div class="member-avatar"><img src="img/pp6.jpg" alt="Fikri"></div>
+            <div class="member-role-badge">Mid Lane</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Fikri Al Husein</h3>
+            <p class="member-ign">IGN: <span>— Nozél Ráa.</span></p>
+            <button class="view-profile-btn" onclick="openModal(5)">View Profile <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slider-nav">
+        <button class="slider-btn" id="prevBtn">&#8592;</button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextBtn">&#8594;</button>
+      </div>
+      <p class="slider-counter" id="sliderCounter">1 / 6</p>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="memberModal">
+    <div class="modal-box">
+      <div class="modal-handle"></div>
+      <button class="modal-close" id="modalClose">✕</button>
+
+      <div class="modal-header">
+        <div class="modal-avatar"><img src="" alt="" id="modalAvatar"></div>
+        <div>
+          <div class="modal-role-badge" id="modalRole"></div>
+          <h2 class="modal-name" id="modalName"></h2>
+          <p class="modal-ign">IGN: <span id="modalIGN"></span></p>
+        </div>
+      </div>
+
+      <div class="modal-rank-section">
+        <div class="modal-rank-icon">
+          <img src="img/glory.jpg" alt="rank" id="modalRankImg"></div>
+        <div>
+          <p class="modal-rank-label">Highest Rank</p>
+          <p class="modal-rank-name" id="modalRankName"></p>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <p class="modal-section-title"><i class="fas fa-gamepad"></i> Hero Favorit</p>
+        <div class="modal-heroes" id="modalHeroes"></div>
+      </div>
+
+      <div class="modal-section">
+        <p class="modal-section-title"><i class="fas fa-chart-bar"></i> Statistik</p>
+        <div class="modal-stat-row">
+          <span class="modal-stat-label">Winrate</span>
+          <div class="modal-progress-wrap">
+            <div class="modal-progress-bar"><div class="modal-progress-fill" id="modalWinrateBar"></div></div>
+            <span class="modal-stat-val" id="modalWinrate"></span>
+          </div>
+        </div>
+        <div class="modal-stat-row">
+          <span class="modal-stat-label">KDA</span>
+          <div class="modal-progress-wrap">
+            <div class="modal-progress-bar"><div class="modal-progress-fill" id="modalKDABar"></div></div>
+            <span class="modal-stat-val" id="modalKDA"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <p class="modal-section-title"><i class="fas fa-user"></i> Bio</p>
+        <p class="modal-bio" id="modalBio"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">⚔️ <span>Dominant Five</span></p>
+      <p class="footer-copy">© 2026 — Dibuat oleh <span>Raacodèx</span> · All Rights Reserved</p>
+      <a href="#" class="footer-top">↑ Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // DATA MEMBER
+    const memberData = [
+      { name: 'Muhammad Fajar', 
+        ign: 'ANAK KUAT MAMAH', 
+        role: 'Gold Lane', 
+        avatar: 'img/pp1.jpg', 
+        rank: 'Mythic', 
+        rankImg: 'img/glory.jpg', 
+        heroes: ['Ixia', 'Obsidia', 'Hanabi'], 
+        winrate: 98, kda: 9.8, 
+        bio: 'Main carry tim, spesialis late game hyper carry. Kalau udah fed, GG otomatis. Suka manja di gank dikit nyalahin roam. Kalo roam nempel melulu sama dia fix kemenangan terjamin.' },
+        
+      { name: 'Raffly Ahmad Saputra', 
+        ign: 'Jo Kho Wee', 
+        role: 'EXP Lane', 
+        avatar: 'img/pp2.jpg', 
+        rank: 'Mythic', 
+        rankImg: 'img/glory.jpg', 
+        heroes: ['Mintsitar', 'Yu Zhong', 'Paquito'],
+        winrate: 100, kda: 9.6, 
+        bio: 'Dinding pertahanan tim. EXP lane yang selaku menang mekanik kalo duel 1v1. Baginya Mikro + IQ = Menang mekanik. Selalu punya strategi buat culik backline musuh. ' },
+        
+        
+      { name: 'Wahyu Prasetyo', 
+        ign: 'Karnaval', 
+        role: 'Jungler', 
+        avatar: 'img/pp3.png', 
+        rank: 'Mythic', 
+        rankImg: 'img/glory.jpg', 
+        heroes: ['Silvana', 'Karina', 'Nana'], 
+        winrate: 98, kda: 9.5, bio: 'Jungler paling mobile di tim. Roaming skills level dewa. Kadang JAGO kadang aneh, kalo snowball menang, kalo feed kalah. Ini emang udh sistem maen nya g bisa berubah.' },
+      
+      { name: 'Rehan Firmansyah', 
+        ign: 'C E O', role: 'Roamer', 
+        avatar: 'img/pp4.jpg', 
+        rank: 'Mythic', 
+        rankImg: 'img/glory.jpg', 
+        heroes: ['Grock', 'Kaja', 'Franco'], 
+        winrate: 98, kda: 9.5, bio: 'Otak strategi tim. Roamer terbaik yang bikin carry bisa bebas farming. Kadang montage lima, kadang montage nata. Zoning nya lumayan tapi mikro nya agak kurang. Not bad lah buat roamer kek dia.' },
+      
+      { name: 'Farel Lewan Ibrahim', 
+        ign: 'shnzamliaa•', 
+        role: 'Mid Lane', 
+        avatar: 'img/pp5.jpg', 
+        rank: 'Mythic', 
+        rankImg: 'img/glory.jpg', 
+        heroes: ['Kadita', 'Kagura', 'Nana'], 
+        winrate: 98, kda: 9.5, bio: 'Mage spesialis teamfight. Ultimate Kadita kena, musuh panik iya. Anti skypiercer musuh tetap kena incer, glowingwand ditangan musuh sudah pasti ilang.' },
+      
+      { name: 'Fikri Husein', 
+      ign: '— Nozél Ráa.', 
+      role: 'Mid Lane', 
+      avatar: 'img/pp6.jpg', 
+      rank: 'Mythic', 
+      rankImg: 'img/glory.jpg', 
+      heroes: ['Cecilion', 'Kadita', 'Nana'], 
+      winrate: 98, kda: 9.5, bio: 'Mage late game specialist. Sabar farm di early sampe late game pun jadi. Selalu jadi terbelakang tapi damage selalu di depan. Posisi bermain nya bagus buat nyumbang damage gede ke musuh.' }
+    ];
+
+    // MODAL
+    function openModal(index) {
+      const d = memberData[index];
+      document.getElementById('modalAvatar').src = d.avatar;
+      document.getElementById('modalName').textContent = d.name;
+      document.getElementById('modalIGN').textContent = d.ign;
+      document.getElementById('modalRole').textContent = d.role;
+      document.getElementById('modalRankName').textContent = d.rank;
+      document.getElementById('modalRankImg').src = d.rankImg;
+      document.getElementById('modalBio').textContent = d.bio;
+      document.getElementById('modalWinrate').textContent = d.winrate + '%';
+      document.getElementById('modalKDA').textContent = d.kda;
+      document.getElementById('modalHeroes').innerHTML = d.heroes.map(h => `<span>${h}</span>`).join('');
+      document.getElementById('modalWinrateBar').style.width = '0%';
+      document.getElementById('modalKDABar').style.width = '0%';
+      document.getElementById('memberModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        document.getElementById('modalWinrateBar').style.width = d.winrate + '%';
+        document.getElementById('modalKDABar').style.width = (d.kda / 10 * 100) + '%';
+      }, 200);
+    }
+
+    function closeModal() {
+      document.getElementById('memberModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    document.getElementById('memberModal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+  </script>
+</body>
+</html>
