@@ -1,0 +1,258 @@
+╔══════════════════════════════════════════════════════════════════╗
+║              PANDUAN KUSTOMISASI LINK BIO TEMPLATE              ║
+╚══════════════════════════════════════════════════════════════════╝
+
+Halo! Berikut panduan lengkap cara mengganti semua isi template ini.
+Tidak perlu bisa coding — cukup ikuti langkah-langkah di bawah ini.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  STRUKTUR FILE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  folder/
+  ├── index.html   → Struktur halaman (tidak perlu diubah)
+  ├── style.css    → Desain & warna  (tidak perlu diubah)
+  ├── script.js    → ✅ FILE INI YANG DIUBAH untuk ganti konten
+  └── PANDUAN.txt  → File ini
+
+  ⚠️  Ketiga file (index.html, style.css, script.js) HARUS
+      berada di dalam SATU folder yang sama!
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  LANGKAH AWAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. Buka file "script.js" menggunakan:
+     - Notepad (Windows)
+     - TextEdit (Mac)
+     - Atau aplikasi VS Code (gratis di code.visualstudio.com)
+
+  2. Cari bagian bertuliskan: const CONFIG = {
+     Semua yang perlu diubah ada di dalam blok CONFIG tersebut.
+
+  3. Ubah isinya (lihat panduan per bagian di bawah).
+
+  4. Simpan file: Ctrl+S (Windows) / Cmd+S (Mac)
+
+  5. Buka "index.html" di browser untuk melihat hasilnya.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1. CARA GANTI FOTO PROFIL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Cari baris ini di script.js:
+    photo: "https://i.pravatar.cc/300?img=47",
+
+  Ganti link-nya dengan URL foto kamu.
+
+  ── Cara mendapatkan URL foto ──
+
+  Cara 1 — Imgur (paling mudah):
+    a. Buka https://imgur.com
+    b. Klik "New post" → upload foto kamu
+    c. Setelah upload, klik kanan foto → "Copy image address"
+    d. Paste link tersebut ke bagian photo
+
+  Cara 2 — Google Drive:
+    a. Upload foto ke Google Drive
+    b. Klik kanan foto → "Get link"
+    c. Ubah akses menjadi "Anyone with the link" → klik Copy
+    d. Link asli: https://drive.google.com/file/d/ABCD1234/view
+    e. Ubah jadi: https://drive.google.com/uc?id=ABCD1234
+       (salin ID-nya saja, ganti "ABCD1234" dengan ID fotomu)
+
+  Contoh hasil:
+    photo: "https://i.imgur.com/Xy8AbC.jpg",
+
+  ⚠️  Tips foto profil terbaik:
+     - Ukuran: 400×400 piksel (persegi)
+     - Format: JPG atau PNG
+     - Pastikan wajah terlihat jelas dan center
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  2. CARA GANTI NAMA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Cari:   name: "Nazwa Aulia",
+  Ubah:   name: "Nama Kamu",
+
+  Contoh: name: "Siti Rahayu",
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  3. CARA GANTI USERNAME / HANDLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Cari:   handle: "@nazwaulia",
+  Ubah:   handle: "@usernamekamu",
+
+  Contoh: handle: "@sitirahayu",
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  4. CARA GANTI TAG / KATEGORI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Cari:
+    tags: ["✨ Content Creator", "🌍 Travel", "📍 Jakarta"],
+
+  Ganti isi dalam tanda kurung siku [ ] sesuai profil kamu.
+  Bisa 2–4 tag. Pisahkan dengan tanda koma.
+
+  Contoh:
+    tags: ["💄 Makeup Artist", "👰 Wedding", "📍 Surabaya"],
+    tags: ["🍳 Food Blogger", "📸 Photographer", "📍 Bali"],
+    tags: ["👗 Fashion", "💅 Beauty", "🛍️ Reseller", "📍 Medan"],
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  5. CARA GANTI BIO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Cari:
+    bio: "Lifestyle · Fashion · Food Lover\nCollab & Endorse? DM me! 💌",
+
+  Ganti teks di dalam tanda kutip " " sesuai kamu.
+  Gunakan \n (garis miring + n) untuk pindah baris.
+
+  Contoh:
+    bio: "Makeup & Skincare Enthusiast\nOrder & Info: WA ya! 📲",
+    bio: "Food reviewer · Resep harian\nYuk masak bareng! 🍳",
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  6. CARA GANTI LINK INSTAGRAM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Cari:
+    instagram: {
+      url: "https://instagram.com/namakamu",
+      sub: "Follow & lihat kontenku ✨",
+    },
+
+  - Ganti "namakamu" di url dengan username Instagram kamu
+  - Ganti teks di sub jika ingin kalimat yang berbeda
+
+  Contoh:
+    url: "https://instagram.com/sitirahayu",
+    sub: "Follow yuk, ada konten aesthetic! 🌸",
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  7. CARA GANTI LINK TIKTOK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Cari:
+    tiktok: {
+      url: "https://tiktok.com/@namakamu",
+      sub: "Tonton video terbaru 🎬",
+    },
+
+  - Ganti "namakamu" di url dengan username TikTok kamu
+
+  Contoh:
+    url: "https://tiktok.com/@sitirahayu",
+    sub: "Video viral ada di sini! 🎵",
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  8. CARA GANTI LINK WHATSAPP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Cari:
+    whatsapp: {
+      url: "https://wa.me/628123456789",
+      sub: "Chat & order langsung 💬",
+    },
+
+  Format URL WhatsApp: https://wa.me/62 + nomor (tanpa 0 di depan)
+
+  Cara konversi nomor:
+    Nomor HP  : 0812-3456-7890
+    Hilangkan 0: 812-3456-7890
+    Tambah +62 : 62812-3456-7890
+    Tanpa strip: 6281234567890
+    Hasil URL  : https://wa.me/6281234567890
+
+  ⚠️  Tidak boleh ada spasi, tanda hubung (-), atau tanda plus (+)
+
+  Contoh:
+    url: "https://wa.me/6281234567890",
+    sub: "Mau order? Hubungi aku! 🛒",
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CONTOH CONFIG LENGKAP YANG SUDAH DIISI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+const CONFIG = {
+  photo:    "https://i.imgur.com/AbcXyz.jpg",
+  name:     "Siti Rahayu",
+  handle:   "@sitirahayu_",
+  tags:     ["💄 Makeup Artist", "👰 Prewedding", "📍 Surabaya"],
+  bio:      "Professional MUA sejak 2019\nBooking & Info via WA 📲",
+  instagram: {
+    url: "https://instagram.com/sitirahayu_",
+    sub: "Lihat portofolio kerjaku ✨",
+  },
+  tiktok: {
+    url: "https://tiktok.com/@sitirahayu_",
+    sub: "Tutorial makeup ada di sini 🎬",
+  },
+  whatsapp: {
+    url: "https://wa.me/6281298765432",
+    sub: "Booking & tanya harga 💬",
+  },
+};
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CARA UPLOAD SUPAYA BISA DIPAKAI DI BIO IG / TIKTOK (GRATIS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Opsi 1 — Netlify Drop (TERMUDAH, tidak perlu akun):
+    1. Buka: https://app.netlify.com/drop
+    2. Drag & drop FOLDER yang berisi ketiga file
+       (index.html, style.css, script.js)
+    3. Tunggu beberapa detik
+    4. Dapat link langsung, contoh: https://fancy-cat-123.netlify.app
+    5. Copy link itu, paste ke bio Instagram / TikTok!
+
+  Opsi 2 — GitHub Pages (permanen, gratis):
+    1. Daftar di https://github.com
+    2. Buat repository baru (klik tanda +, pilih New repository)
+    3. Upload ketiga file ke repository tersebut
+    4. Buka Settings → Pages → pilih branch "main" → Save
+    5. Dapat link: https://usernamegithub.github.io/nama-repo
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TIPS & CATATAN PENTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ✅ DO (yang harus dilakukan):
+     - Simpan file setelah mengedit (Ctrl+S)
+     - Pastikan tanda kutip ("") tetap ada di awal dan akhir teks
+     - Pastikan tanda koma (,) tetap ada di akhir setiap baris
+     - Test tampilan di HP sebelum pasang di bio
+
+  ❌ DON'T (yang tidak boleh dilakukan):
+     - Jangan hapus tanda { } [ ] atau , di luar teks
+     - Jangan ada nomor WA dengan spasi atau tanda strip
+     - Jangan rename file (harus tetap index.html, style.css, script.js)
+
+  💡 TIPS:
+     - Buka index.html di browser Chrome/Firefox untuk preview
+     - Tekan F12 untuk lihat apakah ada error (di tab Console)
+     - Jika tampilan tidak berubah setelah edit, tekan Ctrl+F5
+       untuk hard refresh browser
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Selamat menggunakan template ini! 🚀
+  Semoga followers makin banyak! 🌟
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
